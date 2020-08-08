@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Basic_15_ScrollView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vjc-jc-ex2">
+                                <rect key="frame" x="47" y="257" width="280" height="168"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="SKo-JN-3uQ"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="nhP-Mq-PKX"/>
+                            </scrollView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pizza_food_20620.png" translatesAutoresizingMaskIntoConstraints="NO" id="ceB-Wz-Adf">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="vjc-jc-ex2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8CE-Ha-hr7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vjc-jc-ex2" secondAttribute="bottom" id="BTI-AH-0Dp"/>
+                            <constraint firstItem="ceB-Wz-Adf" firstAttribute="leading" secondItem="nhP-Mq-PKX" secondAttribute="leading" id="GWU-vK-mDa"/>
+                            <constraint firstItem="vjc-jc-ex2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Lct-GS-cS8"/>
+                            <constraint firstItem="ceB-Wz-Adf" firstAttribute="top" secondItem="nhP-Mq-PKX" secondAttribute="top" id="MCS-6V-Oi7"/>
+                            <constraint firstItem="nhP-Mq-PKX" firstAttribute="trailing" secondItem="ceB-Wz-Adf" secondAttribute="trailing" id="Pz0-jO-iGm"/>
+                            <constraint firstItem="nhP-Mq-PKX" firstAttribute="bottom" secondItem="ceB-Wz-Adf" secondAttribute="bottom" id="wDC-lM-OxQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vjc-jc-ex2" secondAttribute="trailing" id="zu4-sH-uA5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="127"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pizza_food_20620.png" width="256" height="256"/>
+    </resources>
+</document>
