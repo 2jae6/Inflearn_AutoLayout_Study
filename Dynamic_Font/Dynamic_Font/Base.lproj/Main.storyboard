@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -17,27 +17,37 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fOT-3T-uCa">
-                                <rect key="frame" x="20" y="181.33333333333331" width="374" height="533.33333333333348"/>
+                                <rect key="frame" x="20" y="181.5" width="374" height="533"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cert_BG.PNG" translatesAutoresizingMaskIntoConstraints="NO" id="CCs-KN-ZuA">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="533.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="533"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="CCs-KN-ZuA" secondAttribute="height" multiplier="1009:1438" id="cKi-cn-HP1"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="공인 인증서" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kae-B0-lzj">
-                                        <rect key="frame" x="148" y="0.0" width="78" height="202.66666666666666"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="공인 인증서" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="kae-B0-lzj">
+                                        <rect key="frame" x="139" y="0.0" width="96" height="202.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="홍길동" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SRU-Bx-7hz">
+                                        <rect key="frame" x="149" y="0.0" width="76" height="373"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstItem="SRU-Bx-7hz" firstAttribute="top" secondItem="CCs-KN-ZuA" secondAttribute="top" id="23T-Ob-Ic4"/>
+                                    <constraint firstItem="SRU-Bx-7hz" firstAttribute="centerX" secondItem="CCs-KN-ZuA" secondAttribute="centerX" id="8ZR-7m-o50"/>
                                     <constraint firstItem="CCs-KN-ZuA" firstAttribute="top" secondItem="fOT-3T-uCa" secondAttribute="top" id="B3L-AU-KII"/>
                                     <constraint firstItem="CCs-KN-ZuA" firstAttribute="centerX" secondItem="fOT-3T-uCa" secondAttribute="centerX" id="DUO-pc-APo"/>
                                     <constraint firstItem="kae-B0-lzj" firstAttribute="bottom" secondItem="CCs-KN-ZuA" secondAttribute="bottom" multiplier="0.38" id="Oqb-99-Jwc"/>
+                                    <constraint firstItem="SRU-Bx-7hz" firstAttribute="bottom" secondItem="CCs-KN-ZuA" secondAttribute="bottom" multiplier="0.7" id="aBh-Kc-qYZ"/>
                                     <constraint firstItem="kae-B0-lzj" firstAttribute="top" secondItem="CCs-KN-ZuA" secondAttribute="top" id="f3r-rc-m4O"/>
+                                    <constraint firstItem="kae-B0-lzj" firstAttribute="height" secondItem="CCs-KN-ZuA" secondAttribute="height" multiplier="0.38" id="g4s-az-JYD"/>
                                     <constraint firstItem="CCs-KN-ZuA" firstAttribute="leading" secondItem="fOT-3T-uCa" secondAttribute="leading" id="gae-kP-ABa"/>
                                     <constraint firstAttribute="trailing" secondItem="CCs-KN-ZuA" secondAttribute="trailing" id="sun-8B-RZG"/>
                                     <constraint firstAttribute="bottom" secondItem="CCs-KN-ZuA" secondAttribute="bottom" id="ugJ-Jg-MIH"/>
@@ -57,7 +67,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="112" y="89"/>
+            <point key="canvasLocation" x="111.59420289855073" y="88.392857142857139"/>
         </scene>
     </scenes>
     <resources>
