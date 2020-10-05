@@ -20,15 +20,15 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="188" id="ISH-9J-XOQ">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="188" id="ISH-9J-XOQ" customClass="ExpandCell" customModule="ExpendCell" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="188"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ISH-9J-XOQ" id="0C8-br-yAu">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="188"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pencil.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="1Ok-zb-0LW">
-                                                    <rect key="frame" x="15" y="15.5" width="50" height="49"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="man.png" translatesAutoresizingMaskIntoConstraints="NO" id="1Ok-zb-0LW">
+                                                    <rect key="frame" x="15" y="15" width="50" height="50"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="50" id="S9v-fa-tfO"/>
                                                         <constraint firstAttribute="height" constant="50" id="kFH-PT-HGL"/>
@@ -41,7 +41,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dzh-XN-6dt">
-                                                    <rect key="frame" x="15" y="80" width="384" height="21"/>
+                                                    <rect key="frame" x="15" y="80" width="384" height="93"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -57,11 +57,19 @@
                                                 <constraint firstItem="4nO-SB-vEc" firstAttribute="leading" secondItem="1Ok-zb-0LW" secondAttribute="trailing" constant="15" id="edk-vV-Ysz"/>
                                                 <constraint firstItem="1Ok-zb-0LW" firstAttribute="top" secondItem="0C8-br-yAu" secondAttribute="top" constant="15" id="kcV-6o-VJl"/>
                                                 <constraint firstAttribute="trailing" secondItem="dzh-XN-6dt" secondAttribute="trailing" constant="15" id="tfY-rO-Gmn"/>
+                                                <constraint firstAttribute="bottom" secondItem="dzh-XN-6dt" secondAttribute="bottom" constant="15" id="zvf-sv-Qug"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="descriptionLabel" destination="dzh-XN-6dt" id="02f-sL-ETQ"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="c6i-QB-bEy"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="FM2-z2-GDE"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -80,7 +88,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="pencil.circle" catalog="system" width="128" height="121"/>
+        <image name="man.png" width="225" height="225"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
